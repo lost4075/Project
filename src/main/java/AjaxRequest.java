@@ -24,7 +24,7 @@ public class AjaxRequest extends HttpServlet {
         try{
             Class.forName("com.mysql.cj.jdbc.Driver");
             conn = DriverManager.getConnection(DB_URL,USER,PASS);
-            out.print("<font color='red'>连接数据库成功</font>");
+            //out.print("<font color='red'>连接数据库成功</font>");
 
             Statement st = conn.createStatement();
             ResultSet rs = st.executeQuery( sqlStr );
